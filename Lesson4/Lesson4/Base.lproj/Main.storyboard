@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lesson4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgf-Zz-E3M">
+                                <rect key="frame" x="82.5" y="244" width="249" height="55.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bgf-Zz-E3M" secondAttribute="height" multiplier="247:55" id="8xL-48-foY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deC-1N-ORT">
+                                <rect key="frame" x="57.5" y="371.5" width="299" height="153"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CLICK FOR A SURPRISE">
+                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jbi-o9-c7f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="deC-1N-ORT" firstAttribute="top" secondItem="Bgf-Zz-E3M" secondAttribute="bottom" constant="150" id="5Oe-Ou-3Ha"/>
+                            <constraint firstItem="deC-1N-ORT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F6y-Es-SEx"/>
+                            <constraint firstItem="Bgf-Zz-E3M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LZE-b5-QJU"/>
+                            <constraint firstItem="deC-1N-ORT" firstAttribute="top" secondItem="Bgf-Zz-E3M" secondAttribute="bottom" constant="72" id="bXu-7N-iKp"/>
+                            <constraint firstItem="Bgf-Zz-E3M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="ih3-hJ-sLp"/>
+                            <constraint firstItem="deC-1N-ORT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x6a-cb-qCX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helloWorld" destination="Bgf-Zz-E3M" id="b0f-t4-ee6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
